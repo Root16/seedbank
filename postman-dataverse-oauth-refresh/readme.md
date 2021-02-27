@@ -1,6 +1,6 @@
 # Automate Dataverse OAuth in Postman
 
-This handy lil script makes it easy to access your Microsoft Dataverse environment's web API using Postman. You can either import the provided configuration files for a quick start or do-it-yourself with manual configuration. This setup is modified from [this Medium blog post](https://medium.com/@allen.helton/how-to-automate-oauth2-token-renewal-in-postman-864420d381a0) to work  specifically for Microsoft Dataverse.
+This handy lil script makes it easy to access your Microsoft Dataverse environment's web API using Postman. You can either import the provided configuration files for a quick start [here](#quick-start) or do-it-yourself with manual configuration [here](#diy). This setup is modified from [this Medium blog post](https://medium.com/@allen.helton/how-to-automate-oauth2-token-renewal-in-postman-864420d381a0) to work  specifically for Microsoft Dataverse.
 
 # Prerequisites
 
@@ -35,7 +35,7 @@ Set the current Postman environment to the one that you just imported. Open the 
 ## DIY - Step 1
 ### Set up your environment variables
 
-Follow Step 1 from Quick Start above from Create or edit a Postman environment to store your Dataverse environment settings. Define variables `dataverseBase`, `clientId`, `clientSecret`, and `authUrl`. Reference Quick Start - Step 1 for example values.
+Create or edit a Postman environment to store your Dataverse environment settings. Define variables `dataverseBase`, `clientId`, `clientSecret`, and `authUrl`. Reference Quick Start - Step 1 for example values.
 
 ## DIY - Step 2
 ### Set up authorization for a collection
