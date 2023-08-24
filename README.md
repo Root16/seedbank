@@ -1,4 +1,4 @@
-# gists
+# seedbank
 
 ## [Automate Dataverse OAuth in Postman](./Automate-Dataverse-OAuth-in-Postman)
 
