@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest>
+  <control namespace="CBH" constructor="LeadDuplication" version="0.0.12"
+    display-name-key="LeadDuplication" description-key="LeadDuplication"
+    control-type="standard">
+
+    <external-service-usage enabled="false">
+    </external-service-usage>
+
+    <property name="verifiedcontactisunique" display-name-key="VerifiedContactIsUnique"
+      description-key="VerifiedContactIsUnique" of-type="TwoOptions" usage="bound"
+      required="true" />
+
+    <property name="verifiedaccountisunique" display-name-key="VerifiedAccountIsUnique"
+      description-key="VerifiedAccountIsUnique" of-type="TwoOptions" usage="bound"
+      required="true" />
+
+    <property name="parentaccountid" display-name-key="ParentAccountId"
+      description-key="ParentAccountId" of-type="Lookup.Simple" usage="bound"
+      required="true" />
+
+    <property name="parentcontactid" display-name-key="ParentContactId"
+      description-key="ParentContactId" of-type="Lookup.Simple" usage="bound"
+      required="true" />
+
+    <property name="firstname" display-name-key="FistName"
+      description-key="FistName" of-type="SingleLine.Text" usage="bound"
+      required="true" />
+
+    <property name="lastname" display-name-key="LastName"
+      description-key="LastName" of-type="SingleLine.Text" usage="bound"
+      required="true" />
+
+    <property name="email" display-name-key="Email"
+      description-key="Email" of-type="SingleLine.Email" usage="bound"
+      required="true" />
+
+    <property name="accountname" display-name-key="AccountName"
+      description-key="AccountName" of-type="SingleLine.Text" usage="bound"
+      required="true" />
+
+    <property name="address1line1" display-name-key="Address1Line1"
+      description-key="Address1Line1" of-type="SingleLine.Text" usage="bound"
+      required="true" />
+
+    <property name="address1line2" display-name-key="Address1Line2"
+      description-key="Address1Line2" of-type="SingleLine.Text" usage="bound"
+      required="true" />
+
+    <property name="relatedtabletype" display-name-key="RelatedTableType"
+      description-key="RelatedTableType" of-type="SingleLine.Text" usage="input"
+      required="true" />
+
+    <resources>
+      <code path="index.ts" order="1" />
+    </resources>
+    <feature-usage>
+      <uses-feature name="Utility" required="true" />
+      <uses-feature name="WebAPI" required="true" />
+    </feature-usage>
+  </control>
+</manifest>

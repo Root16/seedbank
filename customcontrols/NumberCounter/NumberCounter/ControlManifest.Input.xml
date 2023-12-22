@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest>
+  <control namespace="CBH" constructor="NumberCounter" version="0.0.2" display-name-key="NumberCounter" description-key="NumberCounter description" control-type="standard" >
+    <external-service-usage enabled="false">
+    </external-service-usage>
+    <property name="Number" 
+            display-name-key="Number" 
+            description-key="Number" 
+            of-type="Whole.None" 
+            usage="bound" 
+            required="true" />
+    <property name="MaxNumber" 
+            display-name-key="MaxNumber" 
+            description-key="MaxNumber" 
+            of-type="Whole.None" 
+            usage="input" 
+            required="true" />
+    <property name="MinNumber" 
+            display-name-key="MinNumber" 
+            description-key="MinNumber" 
+            of-type="Whole.None" 
+            usage="input" 
+            required="true" />
+    <resources>
+      <code path="index.ts" order="1"/>
+    </resources>
+    <!-- <feature-usage>
+      <uses-feature name="Device.captureAudio" required="true" />
+      <uses-feature name="Device.captureImage" required="true" />
+      <uses-feature name="Device.captureVideo" required="true" />
+      <uses-feature name="Device.getBarcodeValue" required="true" />
+      <uses-feature name="Device.getCurrentPosition" required="true" />
+      <uses-feature name="Device.pickFile" required="true" />
+      <uses-feature name="Utility" required="true" />
+      <uses-feature name="WebAPI" required="true" />
+    </feature-usage> -->
+  </control>
+</manifest>
